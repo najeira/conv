@@ -57,6 +57,7 @@ func TryString(v interface{}) (string, bool) {
 
 func String(v interface{}, args ...string) string {
 	if v == nil {
+		return stringGetDefault(args)
 	}
 	if d, ok := TryString(v); ok {
 		return d
