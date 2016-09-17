@@ -17,12 +17,12 @@ s := conv.String(n) // "123"
 
 ```go
 var s string = "123"
-n := conv.Int(n) // 123
+n := conv.Int(s) // 123
 ```
 
 Funcs returns second argument when convering is failed.
 
 ```go
 var s string = "not integer"
-n := conv.Int(n, 456) // 456
+n := conv.Int(s, 456) // 456
 ```
